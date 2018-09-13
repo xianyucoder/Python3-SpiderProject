@@ -5,8 +5,8 @@ import time
 driver = webdriver.Chrome()
 
 driver.get("https://www.douban.com/")
-driver.find_element_by_id("form_email").send_keys("")
-driver.find_element_by_id("form_password").send_keys("")
+driver.find_element_by_id("form_email").send_keys("18450099172")
+driver.find_element_by_id("form_password").send_keys("daihuang1995j")
 
 time.sleep(3)
 

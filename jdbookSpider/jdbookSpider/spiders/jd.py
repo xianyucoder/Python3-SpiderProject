@@ -44,9 +44,10 @@ class JdSpider(scrapy.Spider):
 				meta={"item": deepcopy(item)}
 			)
 		# 下一页地址构建
-		next_url = response.xpath("//a[@class='pn-next']/@href")
-		if next_url:
-			next_url = urllib.parse.join(response.url, next_url)
+		next_url = response.xpath("//a[@class='pn-next']/@href").extract_first()
+		if next_url is not None:
+			print("=========================================")
+			next_url = urllib.parse.urljoin(response.url, next_url)
 			yield scrapy.Request(
 				next_url,
 				callback=self.parse_cate_url,
