@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/csdnSpider.iml" filepath="$PROJECT_DIR$/.idea/csdnSpider.iml" />
+      <module fileurl="file://E:\PythonCode\算法\.idea\算法.iml" filepath="E:\PythonCode\算法\.idea\算法.iml" />
+    </modules>
+  </component>
+</project>
